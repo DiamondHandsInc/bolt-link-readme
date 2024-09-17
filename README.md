@@ -1,5 +1,7 @@
 # Bolt.link — View ads to earn sats
 
+日本語は[こちら](https://github.com/DiamondHandsInc/bolt-link-readme/blob/main/README-JP.md)
+
 # Abstract
 
 One of the first challenges a new Lightning user faces is where to get their first sats. Bolt.link allows users to receive payments in exchange for viewing ads in Diamond Wallet, eliminating this challenge while users can maintain custody of their funds.
