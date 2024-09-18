@@ -13,13 +13,15 @@ In order to receive sats, a user must:
 
 This enables advertisers to pay users a small amount of satoshis for viewing their website, etc.
 
+Fraud is prevented by requiring users to have a Lightning channel, making it costly to attempt to claim sats multiple times.
+
 ## For advertisers:
 
 Advertise directly to Lightning Network users. Since users must have a Lightning channel (i.e. an upfront cost), advertisers won't waste their budget on fraudulent bots.
 
 ## For users:
 
-Earn sats directly to a non-custodial wallet (Diamond Wallet).
+Earn sats directly to a non-custodial wallet (Diamond Wallet). No KYC.
 
 ## Current Status
 
