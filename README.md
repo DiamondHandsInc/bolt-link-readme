@@ -1,23 +1,21 @@
-# Bolt.link — View ads to earn sats
+# Bolt Link — View ads to earn sats
 
 日本語は[こちら](https://github.com/DiamondHandsInc/bolt-link-readme/blob/main/README-JP.md)
 
 # Abstract
 
-One of the first challenges a new Lightning user faces is where to get their first sats. Bolt.link allows users to receive payments in exchange for viewing ads in Diamond Wallet, eliminating this challenge while users can maintain custody of their funds.
+Bolt Link is like bit.ly with sats rewards -- Users view ads to earn sats.
 
 In order to receive sats, a user must:
 
-- Already have their own channel in Diamond Wallet (costs 3000 sats), OR have a special link with a one-time-code that allows users without a pre-existing channel to claim sats. (A new channel is opened and the channel open fee is deducted when receiving these sats.)
+- Already have their own channel in Diamond Wallet (costs 3000 sats)
 - Visit a special link, which prompts the wallet to open an advertisement in the in-app browser. The wallet will create and invoice and request a payment in the background as the user views the advertisement.
 
 This enables advertisers to pay users a small amount of satoshis for viewing their website, etc.
 
-# What Bolt.link does
-
 ## For advertisers:
 
-Advertise directly to Lightning Network users.
+Advertise directly to Lightning Network users. Since users must have a Lightning channel (i.e. an upfront cost), advertisers won't waste their budget on fraudulent bots.
 
 ## For users:
 
@@ -25,7 +23,7 @@ Earn sats directly to a non-custodial wallet (Diamond Wallet).
 
 ## Current Status
 
-[Bolt.link](http://Bolt.link) is still in its proof of concept / testing stage, and is not yet open to outside advertisers. Users may sign up by downloading the Diamond Wallet app & funding a channel. Most links are published in the Diamond Hands Telegram channel. Advertisements are not directly pushed to the user / app.
+Bolt Link is still in its proof of concept / testing stage, and is not yet open to outside advertisers. Users may sign up by downloading the Diamond Wallet app & funding a channel. Most links are published in the Diamond Hands Telegram channel. Advertisements are not directly pushed to the user / app.
 
 # How it works
 
@@ -64,11 +62,15 @@ Potential features we are looking into include:
 
 - Pushing advertisements to users directly
 - A referral scheme
+- Open a channel with an in-app purchase (for newbies with no sats)
+- Compatibility with other Lightning wallets built on Greenlight
 
 This list is not exhaustive.
 
 # Priors
 
-The “sats4ads” function in the Telegram bot “Lntxbot” used to serve a similar purpose, where users would set a price per character at which they would be willing to be paid to receive ads. The difference is that Lntxbot was a custodial wallet, that the users were able to set their own prices (it was a marketplace of ads and viewers, so to speak), and that advertisements were directly pushed to users (in Bolt.link, the user must visit a link to receive the advertisement).
+The “sats4ads” function in the Telegram bot “Lntxbot” used to serve a similar purpose, where users would set a price per character at which they would be willing to be paid to receive ads. The difference is that Lntxbot was a custodial wallet, that the users were able to set their own prices (it was a marketplace of ads and viewers, so to speak), and that advertisements were directly pushed to users (in Bolt Link, the user must visit a link to receive the advertisement). Bolt Link also uses regular URLs, which can be shared on various platforms (emails, tweets, chatrooms, etc.).
 
 Some Podcasting apps, such as Fountain.fm, allow users to get paid for listening to podcasts. Some games grant players sats for completing certain milestones. Rewarding sats to users in this way can boost activity and revenue for apps.
+
+A similar concept to Bolt Link can be built using LNURL-withdraw, but will be a less streamlined experience, and more difficult to prevent fraud. The user will have to find an LNURL string on the website being shared -- which may not be possible if the page being shared is not controlled by the advertiser. The vast majority of LNURL users are also using custodial wallets, which makes preventing fraud using our Lightning channel-based scheme impossible.
